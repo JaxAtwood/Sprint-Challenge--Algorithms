@@ -10,7 +10,7 @@ a)  a = 0
     while (a < n * n * n):
       a = a + n * n
 ```
-
+this is O(n) - it cancels eachother out using fractions
 
 ```
 b)  sum = 0
@@ -20,6 +20,7 @@ b)  sum = 0
         j *= 2
         sum += 1
 ```
+O(n log n) this is because of the nested loop inside of the for loop. The for loop will run n times and the while loop will run log n times
 
 ```
 c)  def bunnyEars(bunnies):
@@ -28,6 +29,7 @@ c)  def bunnyEars(bunnies):
 
       return 2 + bunnyEars(bunnies-1)
 ```
+O(n) as it reduces by 1 every time
 
 ## Exercise II
 
